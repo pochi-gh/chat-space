@@ -75,10 +75,14 @@ $white:#fff;
         color:#333;
         font-size: 20px;
         margin-bottom: 15px;
+        display: flex;
       }
       &--member{
         color: #999;
         font-size: 12px;
+        li{
+          display: inline-block;
+        }
       }
     }
     .group__right{
@@ -117,37 +121,46 @@ $white:#fff;
       padding-bottom: 11px;
     }
   }
-  &__input{
+  &__form{
     height: 90px;
     background-color: #d2d2d2;
-     @include space-between;
-    padding: 0 40px;
-    align-items: center;
-    .input__box{
-      display: flex;
-      &--form{
+    padding: 20px 40px;
+    
+    .new_message{
+      @include space-between;
+
+    }
+    .form{
+      &__message{
         height: 50px;
         width: calc(100vw - 495px);
         padding-left:10px;
-        position: relative;
-        &--image{
-          position: absolute;
-          right:165px;
-          line-height: 50px;
-          input{
-            display: none;
+
+      }
+        &__mask{
+          position: relative;
+
+          &__image{
+            position: absolute;
+            top: 15px;
+            right: 10px;
           }
+          .icon{
+          }
+          .hidden{
+           display: none;
+         }  
         }
+      .form__submit{
+        height: 50px;
+        width: 100px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color:$white;
+        text-align: center;
+        line-height: 50px;
+        float: right;
       }
     }
-    .input__send--btn{
-      height: 50px;
-      width: 100px;
-      margin-left: 15px;
-      background-color: #38aef0;
-      color:$white;
-      text-align: center;
-      line-height: 50px;
-    }
   }
-}
+}  
