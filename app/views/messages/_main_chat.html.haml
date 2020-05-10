@@ -10,7 +10,7 @@
             %li= user.name
 
     .group__right
-      = link_to "/groups/#{@group}/edit", class:"group__right--btn" do
+      = link_to "/groups/#{@group.id}/edit", class:"group__right--btn" do
         Edit
   .chat-main__message
     = render @messages
