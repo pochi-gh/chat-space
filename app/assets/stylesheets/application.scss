@@ -19,7 +19,7 @@ $white:#fff;
   float: left;
   &__header{
     height: 100px;
-    background-color: #333;
+    background-color: #253141;
     display: flex;
     align-items: center;
     .top-item{
@@ -63,13 +63,13 @@ $white:#fff;
 .chat-main{
   float: left;
   height: 100vh;
-  width: calc(100vw - 315px);
+  width: calc(100vw - 300px);
   background-color:$white;
   &__group{
     height: 100px;
     background-color:$white;;
     @include space-between;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #eee;
     .group__left{
       margin: 35px 0 0 40px;
       &--title{
@@ -125,7 +125,7 @@ $white:#fff;
   }
   &__form{
     height: 90px;
-    background-color: #d2d2d2;
+    background-color: #ddd;
     padding: 20px 40px;
     
     .new_message{
